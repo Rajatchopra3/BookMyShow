@@ -1,0 +1,3 @@
+The Movie Microservice is part of a larger microservices architecture and is responsible for handling the core movie-related functionalities, such as storing movie data, managing CRUD operations, and publishing events when movies are created or updated. The service integrates with MongoDB to store the data and utilizes an event-driven approach to notify other services (like the Search Service) about changes.
+
+The service communicates with the Search Service via a message broker, keeping the two services decoupled while ensuring data consistency across the system.
